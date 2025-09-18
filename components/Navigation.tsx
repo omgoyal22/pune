@@ -25,14 +25,14 @@ const Navigation = () => {
     { name: 'Contact', href: '#contact' },
   ]
 
-  const navLinkStyle = (isScrolled: boolean) => ({
+  const navLinkStyle = (isScrolled: boolean): React.CSSProperties => ({
     fontSize: '0.875rem',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     fontWeight: '500',
     color: isScrolled ? '#333' : 'white',
     textDecoration: 'none',
     padding: '0.5rem 0',
-    position: 'relative',
+    position: 'relative' as const,
     transition: 'all 0.3s ease',
     textShadow: !isScrolled ? '1px 1px 2px rgba(0,0,0,0.5)' : 'none'
   })
