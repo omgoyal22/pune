@@ -62,7 +62,7 @@ const Themes = () => {
             color: '#8B4513',
             marginBottom: '1rem',
             letterSpacing: '0.05em',
-            fontFamily: 'Peach Brown, sans-serif'
+            fontFamily: 'sans-serif'
           }}>
             Our Services
           </h2>
@@ -70,7 +70,8 @@ const Themes = () => {
             width: '6rem',
             height: '2px',
             background: '#D4AF37',
-            margin: '0 auto 1rem'
+            margin: '0 auto 1rem',
+            fontFamily: 'Peach Brown,sans-serif'
           }}></div>
           <p style={{
             fontSize: '1.125rem',
@@ -138,7 +139,8 @@ const Themes = () => {
                   marginBottom: '1.5rem',
                   letterSpacing: '0.1em',
                   textTransform: 'uppercase',
-                  fontWeight: '500'
+                  fontWeight: '500',
+                  fontFamily: 'sans-serif'
                 }}>
                   {theme.subtitle}
                 </h4>
@@ -149,7 +151,8 @@ const Themes = () => {
                   lineHeight: '1.7',
                   marginBottom: '2rem',
                   maxWidth: '400px',
-                  margin: theme.layout === 'right' ? '0 0 2rem auto' : '0 0 2rem 0'
+                  margin: theme.layout === 'right' ? '0 0 2rem auto' : '0 0 2rem 0',
+                  fontFamily: 'sans-serif'
                 }}>
                   {theme.description}
                 </p>
